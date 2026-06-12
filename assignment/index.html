@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyJourney Travel Agency</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<!-- Chat Icon -->
+
+<div id="chatIcon">
+    <i class="fa-solid fa-comments"></i>
+</div>
+
+<!-- Chatbot -->
+
+<div class="chat-container" id="chatContainer">
+
+    <div class="chat-header">
+
+        <h3>AI Travel Assistant</h3>
+
+        <span id="closeChat">✖</span>
+
+    </div>
+
+    <div id="chatBox"></div>
+
+    <div class="chat-input">
+
+        <input
+        type="text"
+        id="userInput"
+        placeholder="Ask about trips...">
+
+        <button onclick="sendMessage()">
+            Send
+        </button>
+
+    </div>
+
+</div>
+<body>
+
+<nav>
+    <div class="logo">✈ SkyJourney</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#chatbot">ChatBot</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <h1>Explore The World With Us</h1>
+
+        <p>
+            Discover breathtaking destinations,
+            luxury vacations and unforgettable experiences.
+        </p>
+
+        <button id="offerBtn">View Special Offer</button>
+    </div>
+
+</section>
+
+<!-- Modal -->
+
+<div id="offerModal" class="offer-modal">
+
+    <div class="offer-content">
+
+        <span class="closeOffer">&times;</span>
+
+        <div class="offer-icon">✈️</div>
+
+        <h2>Special Travel Offer</h2>
+
+        <p>
+            Book your dream vacation today and enjoy
+            amazing discounts on international tours.
+        </p>
+
+        <div class="offer-box">
+
+            <h3>🎉 25% OFF</h3>
+
+            <p>On Dubai, Turkey & Paris Packages</p>
+
+        </div>
+
+        <button class="claim-btn">Claim Offer</button>
+
+    </div>
+
+</div>
+
+<!-- Slider -->
+
+<section class="slider-section">
+    <section class="slider-container">
+
+        <div class="slide active">
+            <img src="dubai.jpg" alt="">
+            <div class="slide-content">
+                <h2>Explore Dubai</h2>
+                <p>Luxury, Adventure & Shopping</p>
+            </div>
+        </div>
+    
+        <div class="slide">
+            <img src="turkey.jpg" alt="">
+            <div class="slide-content">
+                <h2>Discover Turkey</h2>
+                <p>History & Beautiful Landscapes</p>
+            </div>
+        </div>
+    
+        <div class="slide">
+            <img src="paris.jpg" alt="">
+            <div class="slide-content">
+                <h2>Visit Paris</h2>
+                <p>The City of Love</p>
+            </div>
+        </div>
+    
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    
+    </section>
+
+  
+
+<!-- Destinations -->
+
+<section id="destinations">
+
+    <h2 class="section-title">
+        Popular Destinations
+    </h2>
+
+    <div class="destination-container">
+
+        <div class="destination-card">
+
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c">
+
+            <div class="destination-info">
+
+                <h3>Dubai</h3>
+
+                <p>
+                    Luxury, Shopping &
+                    Desert Adventures
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="destination-card">
+
+            <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200">
+
+            <div class="destination-info">
+
+                <h3>Turkey</h3>
+
+                <p>
+                    Historical Wonders &
+                    Stunning Landscapes
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="destination-card">
+
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34">
+
+            <div class="destination-info">
+
+                <h3>Paris</h3>
+
+                <p>
+                    Romantic Streets &
+                    Iconic Attractions
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="destination-card">
+
+            <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd">
+
+            <div class="destination-info">
+
+                <h3>Maldives</h3>
+
+                <p>
+                    Crystal Waters &
+                    Luxury Resorts
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+
+<!-- Packages -->
+
+<section id="packages">
+
+    <h2 class="section-title">Our Best Travel Packages</h2>
+
+    <div class="package-container">
+
+        <div class="package-card">
+            <div class="badge">Popular</div>
+
+            <h3>🇦🇪 Dubai Luxury Tour</h3>
+
+            <p>5 Days • 4 Nights</p>
+
+            <ul>
+                <li>✔ 5 Star Hotel</li>
+                <li>✔ Airport Transfer</li>
+                <li>✔ Desert Safari</li>
+                <li>✔ Burj Khalifa Visit</li>
+            </ul>
+
+            <h4>$899</h4>
+
+            <button>Book Now</button>
+        </div>
+
+        <div class="package-card">
+            <div class="badge">Best Seller</div>
+
+            <h3>🇹🇷 Turkey Adventure</h3>
+
+            <p>7 Days • 6 Nights</p>
+
+            <ul>
+                <li>✔ Luxury Hotel</li>
+                <li>✔ Guided Tours</li>
+                <li>✔ Breakfast Included</li>
+                <li>✔ Bosphorus Cruise</li>
+            </ul>
+
+            <h4>$1299</h4>
+
+            <button>Book Now</button>
+        </div>
+
+        <div class="package-card">
+            <div class="badge">Premium</div>
+
+            <h3>🇫🇷 Paris Escape</h3>
+
+            <p>6 Days • 5 Nights</p>
+
+            <ul>
+                <li>✔ Eiffel Tower Tour</li>
+                <li>✔ Hotel Stay</li>
+                <li>✔ City Transport</li>
+                <li>✔ River Cruise</li>
+            </ul>
+
+            <h4>$1499</h4>
+
+            <button>Book Now</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Reviews -->
+
+<section class="reviews">
+
+    <h2 class="section-title">
+        What Our Travelers Say
+    </h2>
+
+    <div class="review-container">
+
+        <div class="review-card">
+
+            <img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+            <h3>Sarah Khan</h3>
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p>
+                Amazing Dubai experience.
+                Hotels, transport and tours
+                were perfectly organized.
+            </p>
+
+        </div>
+
+        <div class="review-card">
+
+            <img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+            <h3>Ahmed Ali</h3>
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p>
+                Turkey trip was unforgettable.
+                Highly recommended travel agency.
+            </p>
+
+        </div>
+
+        <div class="review-card">
+
+            <img src="https://randomuser.me/api/portraits/women/65.jpg">
+
+            <h3>Ayesha Noor</h3>
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p>
+                Professional staff and excellent
+                customer support throughout the trip.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Booking Form -->
+
+<section id="booking">
+
+<h2 class="section-title">Book Your Trip</h2>
+
+<form id="bookingForm">
+
+<input type="text" id="name" placeholder="Full Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="text" id="phone" placeholder="Phone Number">
+
+<input type="password" id="password" placeholder="Password">
+
+<button type="submit">Book Now</button>
+
+</form>
+
+<p id="message"></p>
+
+</section>
+
+<!-- Chatbot -->
+
+<section id="chatbot">
+
+
+<div class="chat-container">
+
+<div id="chatBox"></div>
+
+<div class="chat-input">
+
+<input type="text"
+id="userInput"
+placeholder="Ask about destinations...">
+
+<button onclick="sendMessage()">Send</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>SkyJourney Travel Agency</h3>
+
+<p>Email: info@skyjourney.com</p>
+
+<p>Phone: +92 300 1234567</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
